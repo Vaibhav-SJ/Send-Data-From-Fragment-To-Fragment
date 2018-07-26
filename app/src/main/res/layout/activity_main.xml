@@ -3,9 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+
     <ScrollView
+        android:layout_below="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="UselessParent">
@@ -18,23 +34,19 @@
 
                 <FrameLayout
                     android:id="@+id/frameLayout1"
-                    android:background="#bebbbb"
+                    android:background="#ececec"
                     android:minHeight="250dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.5">
-
-                </FrameLayout>
+                    android:layout_weight="0.5"/>
 
                 <FrameLayout
                     android:id="@+id/frameLayout2"
-                    android:background="#ffbaba"
+                    android:background="#f2f5f1"
                     android:minHeight="250dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.5">
-
-                </FrameLayout>
+                    android:layout_weight="0.5"/>
 
         </LinearLayout>
     </ScrollView>
