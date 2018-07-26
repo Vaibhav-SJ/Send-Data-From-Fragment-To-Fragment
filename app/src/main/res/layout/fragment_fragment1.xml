@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Fragment 1"
+        android:layout_marginBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:inputType="textCapWords|textMultiLine"
+        android:hint="Enter msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:inputType="number"
+        android:layout_marginTop="3dp"
+        android:hint="Enter number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:textAllCaps="false"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
